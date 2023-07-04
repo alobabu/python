@@ -3,7 +3,6 @@ bot = telebot.TeleBot('6078117071:AAH08U95CnQbrdlp01Z0rQQn-Do0mJXM4cA');
 @bot.message_handler(content_types=['text'])
 def get_text_messages(message):
     if message.text == "/start":
-        name = message.from_user.username
         bot.send_message(message.from_user.id, "*📍 Приветствую!* Я Бот-Помощник по Мафии."
     "\n👀 Если вы впервые в Мафии-Баку, воспользуйтесь командой *.нью*"
     '\n🔎 Если вы уже играли в Мафию-Баку, воспользуйтесь командой *.инф*', parse_mode='Markdown')
