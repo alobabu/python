@@ -1,4 +1,5 @@
 import telebot;
+import time;
 bot = telebot.TeleBot('6078117071:AAH08U95CnQbrdlp01Z0rQQn-Do0mJXM4cA');
 @bot.message_handler(content_types=['text'])
 def get_text_messages(message):
